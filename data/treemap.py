@@ -1,6 +1,7 @@
 #libraries
 import matplotlib
 import matplotlib.pyplot as plt
+import csv
 import pandas as pd
 import squarify # pip install squarify (algorithm for treemap)&lt;/pre&gt;
  
