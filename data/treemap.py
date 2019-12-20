@@ -1,21 +1,9 @@
-#libraries
-import matplotlib
+# libraries
 import matplotlib.pyplot as plt
+import squarify    # pip install squarify (algorithm for treemap)
 import csv
-import pandas as pd
-import squarify # pip install squarify (algorithm for treemap)&lt;/pre&gt;
  
-# Create a dataset:
-my_values=[i**3 for i in range(1,100)]
- 
-# create a color palette, mapped to these values
-cmap = matplotlib.cm.Blues
-mini=min(my_values)
-maxi=max(my_values)
-norm = matplotlib.colors.Normalize(vmin=mini, vmax=maxi)
-colors = [cmap(norm(value)) for value in my_values]
- 
-# Change color
-squarify.plot(sizes=my_values, alpha=.8, color=colors )
+# If you have 2 lists
+squarify.plot(sizes=[653,625,457,440,434,433,360,285,280,263,192,162,158,152,122,94,87,82,79,75,63,60,27,21,18,15,15,15,13,12,11,11,9,7,7,7,6,5,5,2,2,2,2,1,1], label=["USA", "CAN", "NOR", "URS", "FIN", "SWE", "GER", "SUI", "AUT", "RUS", "ITA", "GDR", "TCH", "FRA", "NED", "FRG", "KOR", "CHN", "GBR", "CZE", "JPN", "EUN", "POL", "EUA", "SLO", "LAT", "BLR", "AUS", "BEL", "HUN", "UKR", "CRO", "LIE", "YUG", "KAZ", "EST", "BUL", "SVK", "DEN", "ROU", "PRK", "LUX", "ESP", "UZB", "NZL"], alpha=.7 )
 plt.axis('off')
 plt.show()
