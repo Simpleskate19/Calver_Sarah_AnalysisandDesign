@@ -34,7 +34,7 @@ plt.legend()
 plt.xticks(r, names, fontweight='bold', rotation=90)
 plt.xlabel("Countries")
 plt.ylabel("Total Medals")
-plt.title("Total Medals For Each Country In The Winter Olympics")
+plt.title("Total Medals For Each Sport In The Winter Olympics")
  
 # Show graphic
 plt.show()
