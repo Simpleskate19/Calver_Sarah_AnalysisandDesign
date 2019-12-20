@@ -1,14 +1,13 @@
-# library & dataset
-import csv
-import matplotlib
+# libraries
 import matplotlib.pyplot as plt
-import seaborn as sns
-df = sns.load_dataset('iris')
+import numpy as np
  
-# Use the 'hue' argument to provide a factor variable
-sns.lmplot( x="sepal_length", y="sepal_width", data=df, fit_reg=False, hue='species', legend=False)
+# create data
+x = np.random.rand(40)
+y = np.random.rand(40)
+z = np.random.rand(40)
  
-# Move the legend to an empty part of the plot
-plt.legend(loc='lower right')
- 
+# use the scatter function
+plt.scatter(x, y, s=z*1000, alpha=0.5)
 plt.show()
+
