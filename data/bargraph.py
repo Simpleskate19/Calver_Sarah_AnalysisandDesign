@@ -14,10 +14,12 @@ y_pos = np.arange(len(bars))
 plt.bar(y_pos, height)
  
 # Create names on the x-axis
-plt.xticks(y_pos, bars, color='orange', rotation=90)
-plt.yticks(color='orange')
+plt.xticks(y_pos, bars, color='black', rotation=90)
+plt.yticks(color='black')
 
 plt.subplots_adjust(bottom=0.4, top=0.99)
  
-# Show graphic
+plt.xlabel("Olmypic Year")
+plt.ylabel("Total Medals")
+plt.title("Medals In Countries In The Winter Olympics")
 plt.show()
