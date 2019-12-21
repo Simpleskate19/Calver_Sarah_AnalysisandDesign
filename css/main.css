@@ -1,0 +1,233 @@
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero*/
+
+.box {
+  background-color: #8ea86e;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+}
+
+div,p,body,header,footer,section,article,nav,h1,h2,h3,h4 { 
+margin: 0; 
+padding: 0; 
+} 
+
+img { 
+border: none; 
+margin: 0; 
+padding: 0; 
+}
+
+/*html selectors*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  background-color: black;
+}
+
+/*a:link is for not visited, a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited { 
+text-decoration:none; 
+}
+
+a:hover, a:active { 
+text-decoration:none; 
+ }
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+  display: none;
+}
+
+/*-- End hidden --*/
+
+/*-- Start Container --*/
+
+.container
+{
+  width: 980px;
+  margin: 0 auto;
+  background-color: purple;
+}
+
+/*-- End Container --*/
+
+/*-- Start Header --*/
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.logoHeader
+{
+  width: 220px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.mainNav
+{
+  width: 500px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left: auto;
+}
+
+.mainNav ul
+{
+  list-style-type: none;
+  padding: 0;
+}
+
+.mainNav ul li {  
+  font-size: 14px;
+  display: inline;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.mainNav ul li a
+{
+  color: #2073a8;
+  padding: 5px;
+}
+
+.mainNav ul li a:hover {
+  padding: 5px;
+  background-color: #ddeff7;
+}
+
+.selected
+{
+  padding: 5px 0px 5px 0px;
+  background-color: #ddeff7;
+}
+
+/*-- End Header --*/
+
+/*-- Start Header --*/
+
+.hero
+{
+  height: 384px;
+  width: 980px;
+  position: relative; /*set to relative to anything that uses absolute inside will positioned to the top left corner of this element*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.heroIndex {
+  background: url(../images/Olympic Logo.svg) no-repeat bottom; 
+}
+
+.hero h2
+{
+  color: #fff;
+  font-size: 31px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.hero h3
+{
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  font-weight:normal;
+  margin-bottom: 20px;
+}
+
+/*-- End Hero --*/
+
+/*-- Start Index --*/
+
+.resources
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.resources p
+{
+  margin-top: 20px;
+  line-height: 22px;
+  color: #666;
+  font-size: 16px;
+}
+
+.firstexample, .secondexample, .thirdexample, .fourthexample, .fifthexample, .sixthexample
+{
+  color: #fff;
+  width: 300px;
+}
+
+.resBut
+{
+  display: block;
+  width: 100px;
+  padding: 15px;
+  color: #FFF;
+  background-color: #61a3c1;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.resBut:hover
+{
+  background-color: #3f6e84;
+}
+/*-- End Index --*/
+/*-- Footer Start --*/
+
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding: 0 20px;
+  height: 125px;
+}
+
+.logoFooter, .socialMedia, .footerNav {
+  color: black;
+  text-align: center;
+}
+
+.socialMedia {
+  height: 50px;
+  width: 100px;
+  margin-left: auto;
+}
+
+.logoNav {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoFooter {
+  height: 50px;
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.footerNav {
+  width: 380px;
+  height: 25px;
+}
+/*--Footer Close --*/
